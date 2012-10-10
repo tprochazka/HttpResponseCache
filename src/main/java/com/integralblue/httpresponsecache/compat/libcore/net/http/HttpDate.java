@@ -29,7 +29,7 @@ import java.util.concurrent.BlockingQueue;
  * Best-effort parser for HTTP dates.
  */
 public final class HttpDate {
-    private static final int RFC1123_PARSER_POOL_SIZE = 10;
+    private static final int RFC1123_PARSER_POOL_SIZE = 3;
 
     /**
      * Most websites serve cookies in the blessed format. Eagerly create the parser to ensure such
